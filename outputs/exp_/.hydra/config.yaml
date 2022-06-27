@@ -1,0 +1,66 @@
+bandmask: 0.0
+batch_size: 64
+best_file: best.th
+beta2: 0.999
+checkpoint: true
+checkpoint_file: checkpoint.th
+continue_best: false
+continue_from: ''
+continue_pretrained: null
+ddp: false
+ddp_backend: nccl
+demucs:
+  causal: true
+  chin: 1
+  chout: 1
+  depth: 5
+  glu: true
+  growth: 2
+  hidden: 48
+  kernel_size: 8
+  max_hidden: 10000
+  normalize: true
+  resample: 4
+  rescale: 0.1
+  stride: 4
+device: cpu
+dry: 0.0
+dset:
+  matching: sort
+  noisy_dir: null
+  noisy_json: egs/val/tr/noisy.json
+  test: egs/val/tr
+  train: egs/val/tr
+  valid: egs/val/tr
+dummy: null
+epochs: 500
+eval_every: 4
+history_file: history.json
+loss: l1
+lr: 0.0003
+model: demucs
+num_prints: 5
+num_workers: 5
+optim: adam
+pad: true
+pesq: true
+rank: null
+remix: false
+rendezvous_file: ./rendezvous
+restart: false
+revecho: 0
+sample_rate: 16000
+samples_dir: samples
+save_again: false
+seed: 2036
+segment: 4
+shift: 0
+shift_same: false
+show: 0
+stft_loss: false
+stft_mag_factor: 0.5
+stft_sc_factor: 0.5
+streaming: false
+stride: 1
+verbose: 0
+world_size: null
